@@ -14,6 +14,20 @@ WINDOWS_amd64=(
   tinify-win64
 )
 
+LINUX_386=(
+  linux
+  386
+  tinify
+  tinify-linux32
+)
+
+LINUX_amd64=(
+  linux
+  amd64
+  tinify
+  tinify-linux64
+)
+
 DARWIN_amd64=(
   darwin
   amd64
@@ -21,12 +35,6 @@ DARWIN_amd64=(
   tinify-macos
 )
 
-LINUX_amd64=(
-  linux
-  amd64
-  tinify
-  tinify-linux
-)
 
 
 VERSION='-'$1 # Get version from CLI
@@ -46,5 +54,6 @@ rm -f releases/* # Remove old binaries
 
 build ${WINDOWS_386[@]}
 build ${WINDOWS_amd64[@]}
-build ${DARWIN_amd64[@]}
+build ${LINUX_386[@]}
 build ${LINUX_amd64[@]}
+build ${DARWIN_amd64[@]}
