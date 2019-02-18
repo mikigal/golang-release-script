@@ -1,4 +1,6 @@
 #!/bin/bash
+echo 'golang-relase-script by mikigal (https://github.com/mikigal)'
+echo ''
 
 WINDOWS_386=(
   windows # GOOS
