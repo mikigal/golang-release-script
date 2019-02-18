@@ -6,7 +6,7 @@ For Unix and macOS use `releases.sh`, for Windows `releases.bat`
 # How to use
 ```bash
 ./release.sh [version number] # for Unix and macOS
-releases.bat [version number] # for Windows
+release.bat [version number] # for Windows
 ```
 If you want to add more platforms simply add it to script
 
