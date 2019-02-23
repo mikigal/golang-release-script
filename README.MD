@@ -1,9 +1,8 @@
 # golang-release-script
 Simply script to cross-platform releasing via one command from CLI. It build and zip binaries for all platforms, with version in zip name (if selected)
 
-For Unix and macOS use `releases.sh`, for Windows `releases.bat`.
- 
- Alternatively you can use `releases.py`, it works on Windows, Unix nad macOS, but require Python 2 or 3
+For Unix and macOS use `releases.sh`, for Windows `releases.bat`. <br />
+Alternatively you can use `releases.py`, it works on Windows, Unix nad macOS, but require Python 2 or 3
 
 # How to use
 Firsty you need to replace names of binaries and zips in script. Then you can use script
