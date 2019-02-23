@@ -37,8 +37,6 @@ DARWIN_amd64=(
   tinify-macos
 )
 
-
-
 VERSION='-'$1 # Get version from CLI
 if [[ $1 = '' ]]; then
     VERSION=''
@@ -54,7 +52,7 @@ function build {
 mkdir -p releases # Create directory for binaries if does not exists
 rm -f releases/* # Remove old binaries
 
-build ${WINDOWS_386[@]}
+build ${WINDOWS_386[@]} # After add new platform remember to build(platform) it
 build ${WINDOWS_amd64[@]}
 build ${LINUX_386[@]}
 build ${LINUX_amd64[@]}

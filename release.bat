@@ -39,6 +39,7 @@ if "%version%"=="-" (
 if exist "releases" rmdir /Q /S releases
 if not exist "releases" mkdir releases
 
+rem After add new platform remember to build it
 call :build %windows_386[0]% %windows_386[1]% %windows_386[2]% %windows_386[3]%
 call :build %windows_amd64[0]% %windows_amd64[1]% %windows_amd64[2]% %windows_amd64[3]%
 call :build %linux_386[0]% %linux_386[1]% %linux_386[2]% %linux_386[3]%
